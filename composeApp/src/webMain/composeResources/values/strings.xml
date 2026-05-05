@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="download">Download</string>
+
+    <string name="navBar_1">Home</string>
+    <string name="navBar_2">Features</string>
+    <string name="navBar_3">Download now</string>
+
+    <string name="hero_title">Want to organize your life with your loved one?</string>
+    <string name="hero_text">You’ve found the right app for you!</string>
+
+    <string name="feature_title">Features designed to help</string>
+    <string name="feature_text">Simple features designed to not get in your way daily</string>
+
+    <string name="feature_1">Easy to use</string>
+    <string name="feature_2">Optimized</string>
+    <string name="feature_3">Secure</string>
+    <string name="feature_4">Works offline</string>
+
+    <string name="cta_title">What are you waiting for?</string>
+    <string name="cta_text">Join other couples and keep your love life more organized!</string>
+
+</resources>

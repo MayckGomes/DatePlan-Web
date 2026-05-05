@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="download">Descargar</string>
+
+    <string name="navBar_1">Inicio</string>
+    <string name="navBar_2">Funciones</string>
+    <string name="navBar_3">Descargar ahora</string>
+
+    <string name="hero_title">¿Quieres organizar tu vida con tu amor?</string>
+    <string name="hero_text">¡Has encontrado la app perfecta para ti!</string>
+
+    <string name="feature_title">Funciones diseñadas para ayudarte</string>
+    <string name="feature_text">Funciones simples diseñadas para no estorbar en tu día a día</string>
+
+    <string name="feature_1">Fácil de usar</string>
+    <string name="feature_2">Optimizado</string>
+    <string name="feature_3">Seguro</string>
+    <string name="feature_4">Funciona sin conexión</string>
+
+    <string name="cta_title">¿Qué estás esperando?</string>
+    <string name="cta_text">¡Únete a otras parejas y organiza mejor tu vida amorosa!</string>
+
+</resources>
