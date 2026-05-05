@@ -4,6 +4,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/626b7e46-0005-4ec0-a1f2-e51e7e7d78ea/deploy-status)](https://app.netlify.com/projects/dateplanapp/deploys)
 
+[Clique aqui para ser redirecionado](https://dateplanapp.netlify.app/)
+
 Aplicação web do DatePlan, um app focado em ajudar casais a organizar compromissos, datas importantes e momentos especiais.
 
 Este projeto foi desenvolvido utilizando Kotlin Multiplatform e Compose Multiplatform, permitindo compartilhar lógica entre plataformas e oferecer uma experiência moderna na web.
