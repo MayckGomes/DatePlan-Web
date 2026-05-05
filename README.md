@@ -4,89 +4,90 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/626b7e46-0005-4ec0-a1f2-e51e7e7d78ea/deploy-status)](https://app.netlify.com/projects/dateplanapp/deploys)
 
-[Clique aqui para ser redirecionado](https://dateplanapp.netlify.app/)
+[Click here to be redirected](https://dateplanapp.netlify.app/)
 
-Aplicação web do DatePlan, um app focado em ajudar casais a organizar compromissos, datas importantes e momentos especiais.
+Web application for DatePlan, an app focused on helping couples organize events, important dates, and special moments.
 
-Este projeto foi desenvolvido utilizando Kotlin Multiplatform e Compose Multiplatform, permitindo compartilhar lógica entre plataformas e oferecer uma experiência moderna na web.
-
-## 🚀 Tecnologias Utilizadas
-
- - 🧠 Kotlin Multiplatform (KMP)
-
- - 🎨 Compose Multiplatform (CMP)
-
- - 🌐 Web (Kotlin/JS)
-
- - ⚙️ Gradle (KTS)
+This project was developed using Kotlin Multiplatform and Compose Multiplatform, enabling shared logic across platforms and delivering a modern web experience.
 
 ---
 
-## 📂 Estrutura do Projeto
-``` 
+## 🚀 Technologies Used
+
+* 🧠 Kotlin Multiplatform (KMP)
+* 🎨 Compose Multiplatform (CMP)
+* 🌐 Web (Kotlin/JS)
+* ⚙️ Gradle (KTS)
+
+---
+
+## 📂 Project Structure
+
+```
 DatePlan Web/
 ├── build.gradle.kts
 ├── settings.gradle.kts
 ├── gradle/
 ├── src/
-└── ... 
+└── ...
 ```
----
-
-## ▶️ Como Rodar o Projeto
-🔧 Pré-requisitos
-
-- JDK 17+
-
-- Gradle (ou usar o wrapper ./gradlew)
-
-## 💻 Rodar localmente
-```./gradlew jsBrowserDevelopmentRun```
-
-### Depois acesse:
-
-http://localhost:8080
 
 ---
 
-## ✨ Funcionalidades
+## ▶️ How to Run the Project
 
-- 📅 Visualização de compromissos
+### 🔧 Prerequisites
 
-- ❤️ Foco em casais
-
-- 🎯 Interface simples e intuitiva
-
-- 📱 Integração com o App
+* JDK 17+
+* Gradle (or use the wrapper `./gradlew`)
 
 ---
 
-## ⚙️ Este projeto web funciona como
+## 💻 Run Locally
 
-- Página institucional
+```
+./gradlew jsBrowserDevelopmentRun
+```
 
-- Apresentação do app
+### Then access:
 
-- Conversão de usuários (download)
-
----
-
-## 🧠 Objetivo
-
-Criar uma experiência leve, rápida e atrativa para:
-
-- Apresentar o DatePlan
-
-- Engajar novos usuários
-
-- Direcionar para download do app
+[http://localhost:8080](http://localhost:8080)
 
 ---
 
-## 👨‍💻 Autor
+## ✨ Features
 
-Desenvolvido por Mayck Gomes
+* 📅 Event visualization
+* ❤️ Focused on couples
+* 🎯 Simple and intuitive interface
+* 📱 App integration
 
-## 📄 Licença
+---
 
-Este projeto é de uso privado.
+## ⚙️ This Web Project Works As
+
+* Institutional page
+* App presentation
+* User conversion (download funnel)
+
+---
+
+## 🧠 Goal
+
+To create a lightweight, fast, and engaging experience to:
+
+* Present DatePlan
+* Engage new users
+* Drive app downloads
+
+---
+
+## 👨‍💻 Author
+
+Developed by Mayck Gomes
+
+---
+
+## 📄 License
+
+This project is for private use.
