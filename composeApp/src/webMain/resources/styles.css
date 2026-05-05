@@ -8,12 +8,12 @@ html, body {
 }
 
 @media (prefers-color-scheme: dark) {
-      html, body {
+      body {
         background-color: #F0F0F0F;
-      }
+     }
 }
 
 img {
-    height: 40px;
-    width: 40px;
+    height: 15vh;
+    width: 15vh;
 }
