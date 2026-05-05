@@ -183,8 +183,10 @@ private fun ImageConteiner(
             state = horizontalState,
             modifier = Modifier
                 .fillMaxSize(),
-            userScrollEnabled = false
+            userScrollEnabled = false,
+            beyondViewportPageCount = 2
         ) { page ->
+
             Image(
                 painter = when (page) {
                     0 -> AppImages.image1
