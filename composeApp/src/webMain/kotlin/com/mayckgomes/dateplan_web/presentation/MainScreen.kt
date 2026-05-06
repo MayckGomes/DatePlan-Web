@@ -1,4 +1,4 @@
-package com.mayckgomes.dateplanweb.presentation
+package com.mayckgomes.dateplan_web.presentation
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -11,11 +11,6 @@ import androidx.compose.ui.layout.onGloballyPositioned
 import androidx.compose.ui.layout.positionInParent
 import androidx.compose.ui.unit.dp
 import com.mayckgomes.dateplan_web.components.rememberWindowSize
-import com.mayckgomes.dateplan_web.presentation.CtaSection
-import com.mayckgomes.dateplan_web.presentation.FeatureSection
-import com.mayckgomes.dateplan_web.presentation.FooterSection
-import com.mayckgomes.dateplan_web.presentation.HeroSection
-import com.mayckgomes.dateplan_web.presentation.TopNavBar
 import kotlinx.browser.window
 import kotlinx.coroutines.launch
 
@@ -95,7 +90,7 @@ fun goToPlayStore(){
 }
 
 fun goToPolicyPrivacy(){
-    window.open("https://dateplanapp.netlify.app/policy-privacy.html")
+    window.open("https://dateplanapp.netlify.app/policy-privacy")
 }
 
 fun goToGithub(){
