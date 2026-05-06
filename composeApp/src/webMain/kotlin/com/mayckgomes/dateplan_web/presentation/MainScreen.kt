@@ -13,6 +13,7 @@ import androidx.compose.ui.unit.dp
 import com.mayckgomes.dateplan_web.components.rememberWindowSize
 import com.mayckgomes.dateplan_web.presentation.CtaSection
 import com.mayckgomes.dateplan_web.presentation.FeatureSection
+import com.mayckgomes.dateplan_web.presentation.FooterSection
 import com.mayckgomes.dateplan_web.presentation.HeroSection
 import com.mayckgomes.dateplan_web.presentation.TopNavBar
 import kotlinx.browser.window
@@ -80,10 +81,23 @@ fun MainScreen() {
                     },
                 onDownloadClick = { goToPlayStore() }
             )
+
+            FooterSection(
+                onPolicyPrivacyClick = { goToPolicyPrivacy() },
+                onGithubClick = { goToGithub() },
+            )
         }
     }
 }
 
 fun goToPlayStore(){
     window.open("https://play.google.com/store/apps/details?id=mayckgomes.com.dateplan")
+}
+
+fun goToPolicyPrivacy(){
+    window.open("https://dateplanapp.netlify.app/policy-privacy.html")
+}
+
+fun goToGithub(){
+    window.open("https://github.com/MayckGomes/DatePlan-Web")
 }
