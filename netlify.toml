@@ -2,3 +2,23 @@
 for = "/*.wasm"
 [headers.values]
 Content-Type = "application/wasm"
+
+[[redirects]]
+from = "/"
+to = "/index.html"
+status = 200
+
+[[redirects]]
+from = "/policy-privacy"
+to = "/policy-privacy.html"
+status = 200
+
+[[redirects]]
+from = "/download"
+to = "https://play.google.com/store/apps/details?id=mayckgomes.com.dateplan"
+status = 200
+
+[[redirects]]
+from = "/abour"
+to = "https://github.com/MayckGomes/DatePlan-Web"
+status = 200
