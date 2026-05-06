@@ -79,7 +79,7 @@ fun FeatureSection(
             modifier = modifier
                 .fillMaxWidth()
                 .background(MaterialTheme.colorScheme.background)
-                .padding(horizontal = 80.dp, vertical = 80.dp)
+                .padding(80.dp)
         ) {
 
             TextConteiner(
