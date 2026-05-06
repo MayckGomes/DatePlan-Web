@@ -1,6 +1,7 @@
 package com.mayckgomes.dateplan_web.presentation
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -21,13 +22,19 @@ fun FooterSection(
     onGithubClick: () -> Unit,
 ) {
 
+    val backgroundColor = if(isSystemInDarkTheme()) {
+        Color.Black
+    } else {
+        Color.White
+    }
+
     Row(
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.SpaceBetween,
         modifier = Modifier
             .fillMaxWidth()
-            .background(Color.Black)
-            .padding(horizontal = 40.dp, vertical = 100.dp)
+            .background(backgroundColor)
+            .padding(horizontal = 40.dp, vertical = 80.dp)
     ) {
 
         LogoPlaceholder()
