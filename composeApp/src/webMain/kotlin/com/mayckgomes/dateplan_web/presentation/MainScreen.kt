@@ -80,6 +80,8 @@ fun MainScreen() {
             FooterSection(
                 onPolicyPrivacyClick = { goToPolicyPrivacy() },
                 onGithubClick = { goToGithub() },
+                onFeedbackClick = { goToFeedBackForm() },
+                onBugReportClick = { goToBugReportForm() }
             )
         }
     }
@@ -95,4 +97,12 @@ fun goToPolicyPrivacy(){
 
 fun goToGithub(){
     window.open("https://github.com/MayckGomes/DatePlan-Web")
+}
+
+fun goToFeedBackForm(){
+    window.open("https://forms.gle/X55GoLNqPZkhPhZZ9")
+}
+
+fun goToBugReportForm(){
+    window.open("https://forms.gle/pruYc8Msjgx2hT16A")
 }
