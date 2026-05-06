@@ -39,6 +39,8 @@ fun TopNavBar(
         // ── Logo ──────────────────────────────────────────
         LogoPlaceholder()
 
+        Spacer(Modifier.width(16.dp))
+
         // ── Nav links + CTA ───────────────────────────────
         Row(
             verticalAlignment = Alignment.CenterVertically,
