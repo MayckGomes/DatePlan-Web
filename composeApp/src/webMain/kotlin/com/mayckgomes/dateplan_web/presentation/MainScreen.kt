@@ -100,9 +100,9 @@ fun goToGithub(){
 }
 
 fun goToFeedBackForm(){
-    window.open("https://forms.gle/X55GoLNqPZkhPhZZ9")
+    window.open("https://forms.gle/7TEkwe2Rs2WYDj5Y9")
 }
 
 fun goToBugReportForm(){
-    window.open("https://forms.gle/pruYc8Msjgx2hT16A")
+    window.open("https://forms.gle/hdk2VQsjxBAEWTaZA")
 }
