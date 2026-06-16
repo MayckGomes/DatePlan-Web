@@ -79,6 +79,7 @@ fun MainScreen() {
 
             FooterSection(
                 onPolicyPrivacyClick = { goToPolicyPrivacy() },
+                onTermsOfUseClick = { goToTermsOfUse() },
                 onGithubClick = { goToGithub() },
                 onFeedbackClick = { goToFeedBackForm() },
                 onBugReportClick = { goToBugReportForm() }
@@ -93,6 +94,10 @@ fun goToPlayStore(){
 
 fun goToPolicyPrivacy(){
     window.open("https://dateplanapp.netlify.app/policy-privacy")
+}
+
+fun goToTermsOfUse(){
+    window.open("https://dateplanapp.netlify.app/terms-of-use")
 }
 
 fun goToGithub(){

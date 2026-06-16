@@ -14,11 +14,26 @@ to = "/policy-privacy.html"
 status = 200
 
 [[redirects]]
+from = "/terms-of-use"
+to = "/terms-of-use.html"
+status = 200
+
+[[redirects]]
 from = "/download"
 to = "https://play.google.com/store/apps/details?id=mayckgomes.com.dateplan"
 status = 200
 
 [[redirects]]
-from = "/abour"
+from = "/about"
 to = "https://github.com/MayckGomes/DatePlan-Web"
+status = 200
+
+[[redirects]]
+from = "/feedback-form"
+to = "https://docs.google.com/forms/d/e/1FAIpQLSdjVysJHj4dxnlDu2MmwSBHbpiOaCnqUIU08Waf0VZZNtTqqQ/viewform"
+status = 200
+
+[[redirects]]
+from = "/bug-report-form"
+to = "https://docs.google.com/forms/d/e/1FAIpQLSd6_1JCzAJ_oPx_wpGyS2dJNm9MYS1hYKQCUekPcdVXe07qXg/viewform"
 status = 200

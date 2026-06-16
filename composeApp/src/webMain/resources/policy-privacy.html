@@ -3,145 +3,457 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidade – DatePlan</title>
+
+    <title>DatePlan Privacy Policy</title>
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 40px;
-            max-width: 900px;
+        :root{
+            --bg:#ffffff;
+            --surface:#f8f9fa;
+            --text:#1f2937;
+            --secondary:#6b7280;
+            --border:#e5e7eb;
+            --accent:#6366f1;
         }
-        h1, h2 {
-            color: #333;
+
+        @media (prefers-color-scheme: dark){
+            :root{
+                --bg:#0f172a;
+                --surface:#1e293b;
+                --text:#f8fafc;
+                --secondary:#94a3b8;
+                --border:#334155;
+                --accent:#818cf8;
+            }
         }
-        h1 {
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
+
+        *{
+            box-sizing:border-box;
         }
-        section {
-            margin-bottom: 30px;
+
+        body{
+            margin:0;
+            font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+            background:var(--bg);
+            color:var(--text);
+            line-height:1.7;
         }
-        ul {
-            margin-left: 20px;
+
+        .container{
+            max-width:900px;
+            margin:auto;
+            padding:32px 20px;
         }
-        .subtitle {
-            color: #666;
-            font-size: 14px;
+
+        header{
+            margin-bottom:40px;
+        }
+
+        h1{
+            margin-bottom:8px;
+        }
+
+        .subtitle{
+            color:var(--secondary);
+        }
+
+        .card{
+            background:var(--surface);
+            border:1px solid var(--border);
+            border-radius:12px;
+            padding:24px;
+            margin-bottom:24px;
+        }
+
+        h2{
+            margin-top:40px;
+        }
+
+        ul{
+            padding-left:24px;
+        }
+
+        .language-selector{
+            display:flex;
+            gap:12px;
+            margin-top:16px;
+        }
+
+        button{
+            border:none;
+            cursor:pointer;
+            padding:10px 16px;
+            border-radius:8px;
+            background:var(--accent);
+            color:white;
+        }
+
+        .hidden{
+            display:none;
+        }
+
+        footer{
+            margin-top:48px;
+            padding-top:24px;
+            border-top:1px solid var(--border);
+            color:var(--secondary);
         }
     </style>
 </head>
+
 <body>
 
-<h1>Política de Privacidade – DatePlan</h1>
-<p class="subtitle">
-    Última atualização / Last updated: 1 de agosto de 2025 / August 1, 2025
-</p>
+<div class="container">
 
-<p>
-O DatePlan respeita sua privacidade e se compromete a proteger seus dados pessoais em conformidade com as leis de proteção de dados aplicáveis, incluindo:
-</p>
+    <header>
+        <h1>DatePlan</h1>
+        <p class="subtitle">
+            Privacy Policy / Política de Privacidade
+        </p>
 
-<ul>
-    <li>Lei Geral de Proteção de Dados (LGPD) – Brasil</li>
-    <li>Regulamento Geral sobre a Proteção de Dados (GDPR) – União Europeia</li>
-    <li>California Consumer Privacy Act (CCPA) – Califórnia, EUA</li>
-</ul>
+        <div class="language-selector">
+            <button onclick="showLanguage('pt')">Português</button>
+            <button onclick="showLanguage('en')">English</button>
+        </div>
+    </header>
 
-<p>
-DatePlan respects your privacy and is committed to protecting your personal data in compliance with applicable data protection laws.
-</p>
+    <!-- PORTUGUÊS -->
+    <div id="pt">
 
-<section>
-    <h2>1. Informações que coletamos / Information We Collect</h2>
-    <p>O DatePlan coleta apenas:</p>
-    <ul>
-        <li>Nome / Name</li>
-        <li>E-mail / Email</li>
-    </ul>
-    <p>Não coletamos imagens, localização, dados de câmera ou informações sensíveis.</p>
-</section>
+        <div class="card">
+            <h2>Política de Privacidade</h2>
 
-<section>
-    <h2>2. Finalidade da coleta / Purpose of Data Collection</h2>
-    <p>As informações coletadas são utilizadas exclusivamente para:</p>
-    <ul>
-        <li>Criar e gerenciar sua conta no DatePlan</li>
-        <li>Verificar sua identidade e autenticar o acesso ao aplicativo</li>
-    </ul>
-</section>
+            <p><strong>Versão:</strong> 2.0</p>
+            <p><strong>Última atualização:</strong> 16 de junho de 2026</p>
 
-<section>
-    <h2>3. Bases legais para o tratamento / Legal Basis for Processing</h2>
-    <ul>
-        <li>Consentimento do usuário</li>
-        <li>Cumprimento de contrato</li>
-        <li>Obrigação legal, quando aplicável</li>
-    </ul>
-</section>
+            <p>
+                O DatePlan respeita a sua privacidade e está comprometido com a proteção
+                dos seus dados pessoais.
+            </p>
+        </div>
 
-<section>
-    <h2>4. Compartilhamento de dados / Data Sharing</h2>
-    <p>
-        Não vendemos, alugamos ou compartilhamos seus dados pessoais com terceiros para fins comerciais.
-    </p>
-    <p>
-        Seus dados poderão ser fornecidos a autoridades competentes quando exigido por lei ou decisão judicial.
-    </p>
-</section>
+        <h2>1. Introdução</h2>
+        <p> O DatePlan respeita a sua privacidade e está comprometido com a proteção dos seus dados pessoais. </p>
+        <p> Esta Política de Privacidade descreve quais dados são coletados, como são utilizados, armazenados e protegidos, bem como os direitos dos usuários em relação às suas informações. </p>
+        <p> Ao utilizar o DatePlan, você concorda com as práticas descritas nesta Política. </p>
 
-<section>
-    <h2>5. Transferência internacional de dados / International Data Transfers</h2>
-    <p>
-        Seus dados podem ser processados e armazenados em servidores localizados fora do seu país.
-    </p>
-    <p>
-        Adotamos medidas adequadas para garantir conformidade com leis aplicáveis, como cláusulas contratuais padrão.
-    </p>
-</section>
+        <h2>2. Controlador dos Dados</h2>
+        <p> <strong>Mayck Jhonatan Gomes da Silva</strong> </p>
+        <p> <strong>Contato para assuntos relacionados à privacidade e proteção de dados:</strong><br> DatePlanAplication@gmail.com </p>
+        <p> <strong>Encarregado pelo tratamento de dados (DPO):</strong><br> Mayck Jhonatan Gomes da Silva </p>
 
-<section>
-    <h2>6. Armazenamento e segurança / Data Storage and Security</h2>
-    <p>
-        Seus dados são armazenados de forma segura, com uso de criptografia e controles de acesso.
-    </p>
-    <p>
-        As informações são mantidas apenas enquanto sua conta estiver ativa ou conforme exigido por lei.
-    </p>
-</section>
+        <h2>3. Dados Coletados</h2>
+        <h3>3.1 Dados fornecidos pelo usuário</h3>
+        <ul>
+            <li>Nome</li>
+            <li>Endereço de e-mail</li>
+            <li>Compromissos</li>
+            <li>Tarefas</li>
+            <li>Lembretes</li>
+            <li>Datas especiais</li>
+            <li>Informações inseridas voluntariamente pelo usuário para utilização dos recursos disponibilizados pelo aplicativo</li>
+        </ul>
 
-<section>
-    <h2>7. Seus direitos / Your Rights</h2>
-    <ul>
-        <li>Solicitar acesso aos dados</li>
-        <li>Corrigir dados incorretos</li>
-        <li>Solicitar exclusão da conta</li>
-        <li>Solicitar portabilidade</li>
-        <li>Revogar consentimento</li>
-        <li>Recusar venda de dados (CCPA)</li>
-    </ul>
-    <p>
-        Para exercer seus direitos, entre em contato pelo e-mail:
-        <strong>DatePlanAplication@gmail.com</strong>
-    </p>
-</section>
+        <h3>3.2 Dados técnicos</h3>
+        <ul>
+            <li>Modelo do dispositivo</li>
+            <li>Sistema operacional</li>
+            <li>Versão do aplicativo</li>
+            <li>Relatórios de falhas</li>
+            <li>Informações de desempenho e estabilidade da aplicação</li>
+        </ul>
+        <p> Essas informações são utilizadas exclusivamente para diagnóstico técnico, correção de erros e aprimoramento da experiência do usuário. </p>
 
-<section>
-    <h2>8. Alterações nesta política / Changes to This Policy</h2>
-    <p>
-        Caso esta política seja alterada, a nova versão será publicada no aplicativo e/ou enviada por e-mail.
-    </p>
-</section>
+        <h3>3.3 Dados que não coletamos</h3>
+        <ul>
+            <li>Fotografias</li>
+            <li>Áudio ou gravações de voz</li>
+            <li>Dados de localização em tempo real</li>
+            <li>Informações de contatos do dispositivo</li>
+            <li>Dados biométricos</li>
+            <li>Informações sensíveis definidas pela legislação aplicável</li>
+        </ul>
 
-<section>
-    <h2>9. Contato / Contact</h2>
-    <p>
-        Em caso de dúvidas ou solicitações:
-    </p>
-    <p>
-        E-mail: <strong>DatePlanAplication@gmail.com</strong><br>
-        Responsável (DPO): Mayck Jhonatan Gomes da Silva
-    </p>
-</section>
+        <h2>4. Finalidade do Tratamento dos Dados</h2>
+        <ul>
+            <li>Criar e gerenciar contas de usuário</li>
+            <li>Permitir o uso das funcionalidades do aplicativo</li>
+            <li>Sincronizar informações entre dispositivos</li>
+            <li>Garantir a segurança da conta</li>
+            <li>Corrigir falhas técnicas</li>
+            <li>Monitorar estabilidade e desempenho da aplicação</li>
+            <li>Cumprir obrigações legais e regulatórias</li>
+        </ul>
+        <p> O DatePlan não utiliza dados pessoais para publicidade direcionada, venda de dados ou perfilamento comercial de usuários. </p>
+
+        <h2>5. Bases Legais para o Tratamento</h2>
+        <ul>
+            <li>Execução dos serviços solicitados pelo usuário</li>
+            <li>Cumprimento de obrigações legais</li>
+            <li>Exercício regular de direitos</li>
+            <li>Legítimo interesse para manutenção da segurança, integridade, estabilidade e melhoria dos serviços</li>
+        </ul>
+
+        <h2>6. Compartilhamento de Dados</h2>
+        <p> O DatePlan não vende, aluga ou comercializa dados pessoais. </p>
+        <ul>
+            <li>Com provedores de infraestrutura necessários para operação do serviço</li>
+            <li>Quando exigido por lei</li>
+            <li>Mediante ordem judicial ou solicitação de autoridade competente</li>
+        </ul>
+
+        <h2>7. Serviços de Terceiros</h2>
+        <ul>
+            <li>Google Firebase Authentication</li>
+            <li>Google Firebase Crashlytics</li>
+            <li>Google Firebase Performance Monitoring</li>
+            <li>Serviços de hospedagem, banco de dados e infraestrutura utilizados pela aplicação</li>
+        </ul>
+
+        <h2>8. Transferência Internacional de Dados</h2>
+        <p> Alguns provedores utilizados pelo DatePlan podem armazenar ou processar informações em servidores
+            localizados fora do país de residência do usuário. </p>
+        <p> Quando aplicável, essas transferências observam mecanismos reconhecidos pela legislação pertinente,
+            incluindo cláusulas contratuais padrão (Standard Contractual Clauses – SCCs) ou outras salvaguardas
+            adequadas. </p>
+
+        <h2>9. Autenticação e Sessões</h2>
+        <p> O DatePlan utiliza mecanismos de autenticação e identificadores de sessão necessários para manter o acesso
+            seguro à conta do usuário. </p>
+
+        <h2>10. Armazenamento e Retenção dos Dados</h2>
+        <p> Os dados serão mantidos enquanto a conta permanecer ativa e forem necessários para prestação dos
+            serviços. </p>
+        <ul>
+            <li>Os dados serão removidos ou anonimizados dos sistemas ativos após exclusão da conta</li>
+            <li>Informações podem permanecer temporariamente em backups</li>
+            <li>Dados podem ser preservados quando exigido por lei</li>
+        </ul>
+
+        <h2>11. Segurança das Informações</h2>
+        <ul>
+            <li>Utilização de conexões protegidas por HTTPS/TLS</li>
+            <li>Controle de acesso aos sistemas</li>
+            <li>Monitoramento de falhas e incidentes</li>
+            <li>Atualizações de segurança</li>
+            <li>Boas práticas de desenvolvimento seguro</li>
+        </ul>
+        <p> Embora sejam adotadas medidas adequadas de proteção, nenhum sistema pode garantir segurança absoluta contra
+            todos os riscos existentes. </p>
+
+        <h2>12. Incidentes de Segurança</h2>
+        <p> Em caso de incidente de segurança que possa acarretar risco ou dano relevante aos usuários, o DatePlan
+            adotará as medidas cabíveis e realizará as comunicações exigidas pela legislação aplicável. </p>
+
+        <h2>13. Direitos do Usuário</h2>
+        <ul>
+            <li>Confirmação da existência de tratamento de dados</li>
+            <li>Acesso aos dados pessoais</li>
+            <li>Correção de dados</li>
+            <li>Exclusão de dados pessoais</li>
+            <li>Portabilidade dos dados</li>
+            <li>Informações sobre compartilhamento de dados</li>
+            <li>Oposição ao tratamento nos casos previstos em lei</li>
+        </ul>
+        <p> Grande parte desses direitos pode ser exercida diretamente através das funcionalidades do aplicativo. </p>
+
+        <h2>14. Exclusão da Conta</h2>
+        <p> O usuário poderá solicitar a exclusão da conta diretamente através das funcionalidades disponibilizadas pelo
+            aplicativo. </p>
+        <p> Caso encontre dificuldades, poderá entrar em contato através do e-mail informado nesta Política. </p>
+
+        <h2>15. Alterações nesta Política</h2>
+        <p> Esta Política poderá ser atualizada periodicamente para refletir alterações legais, regulatórias, técnicas
+            ou operacionais. </p>
+        <p> Sempre que ocorrerem alterações relevantes, os usuários serão informados através do aplicativo, do site
+            oficial ou por outros meios apropriados. </p>
+
+    </div>
+
+    <!-- ENGLISH -->
+    <div id="en" class="hidden">
+
+        <div class="card">
+            <h2>Privacy Policy</h2>
+
+            <p><strong>Version:</strong> 2.0</p>
+            <p><strong>Last updated:</strong> June 16, 2026</p>
+
+            <p>
+                DatePlan respects your privacy and is committed to protecting
+                your personal data.
+            </p>
+        </div>
+
+        <h2>1. Introduction</h2>
+        <p> DatePlan respects your privacy and is committed to protecting your personal data. </p>
+        <p> This Privacy Policy describes what data is collected, how it is used, stored, and protected, as well as the rights of users regarding their information. </p>
+        <p> By using DatePlan, you agree to the practices described in this Policy. </p>
+
+        <h2>2. Data Controller</h2>
+        <p> <strong>Mayck Jhonatan Gomes da Silva</strong> </p>
+        <p> <strong>Contact for privacy and data protection matters:</strong><br> DatePlanAplication@gmail.com </p>
+        <p> <strong>Data Protection Officer (DPO):</strong><br> Mayck Jhonatan Gomes da Silva </p>
+
+        <h2>3. Data Collected</h2>
+        <h3>3.1 Data provided by the user</h3>
+        <ul>
+            <li>Name</li>
+            <li>Email address</li>
+            <li>Appointments</li>
+            <li>Tasks</li>
+            <li>Reminders</li>
+            <li>Special dates</li>
+            <li>Information voluntarily entered by the user to use the app features</li>
+        </ul>
+
+        <h3>3.2 Technical data</h3>
+        <ul>
+            <li>Device model</li>
+            <li>Operating system</li>
+            <li>App version</li>
+            <li>Crash reports</li>
+            <li>Performance and stability information</li>
+        </ul>
+
+        <p> This information is used exclusively for technical diagnosis, error correction, and improving the user experience. </p>
+
+        <h3>3.3 Data we do not collect</h3>
+        <ul>
+            <li>Photos</li>
+            <li>Audio or voice recordings</li>
+            <li>Real-time location data</li>
+            <li>Contacts from the device</li>
+            <li>Biometric data</li>
+            <li>Sensitive information defined by applicable law</li>
+        </ul>
+
+        <h2>4. Purpose of Data Processing</h2>
+        <ul>
+            <li>Create and manage user accounts</li>
+            <li>Enable app functionality</li>
+            <li>Synchronize data across devices</li>
+            <li>Ensure account security</li>
+            <li>Fix technical issues</li>
+            <li>Monitor stability and performance</li>
+            <li>Comply with legal and regulatory obligations</li>
+        </ul>
+
+        <p> DatePlan does not use personal data for targeted advertising, data selling, or user profiling for commercial purposes. </p>
+
+        <h2>5. Legal Basis for Processing</h2>
+        <ul>
+            <li>Performance of services requested by the user</li>
+            <li>Compliance with legal obligations</li>
+            <li>Legitimate interests</li>
+            <li>Maintenance of security, integrity, stability, and service improvement</li>
+        </ul>
+
+        <h2>6. Data Sharing</h2>
+        <p> DatePlan does not sell, rent, or commercialize personal data. </p>
+        <ul>
+            <li>With infrastructure providers necessary for service operation</li>
+            <li>When required by law</li>
+            <li>By court order or request from competent authorities</li>
+        </ul>
+
+        <h2>7. Third-Party Services</h2>
+        <ul>
+            <li>Google Firebase Authentication</li>
+            <li>Google Firebase Crashlytics</li>
+            <li>Google Firebase Performance Monitoring</li>
+            <li>Hosting, database, and infrastructure services used by the application</li>
+        </ul>
+
+        <h2>8. International Data Transfers</h2>
+        <p> Some providers used by DatePlan may store or process information on servers located outside the user's country of residence. </p>
+        <p> When applicable, these transfers follow recognized legal mechanisms, including Standard Contractual Clauses (SCCs) or other appropriate safeguards. </p>
+
+        <h2>9. Authentication and Sessions</h2>
+        <p> DatePlan uses authentication mechanisms and session identifiers necessary to securely maintain user account access. </p>
+
+        <h2>10. Data Storage and Retention</h2>
+        <p> Data is retained as long as the account remains active and necessary for providing services. </p>
+        <ul>
+            <li>Data is removed or anonymized from active systems after account deletion</li>
+            <li>Information may remain temporarily in backups</li>
+            <li>Data may be retained when required by law</li>
+        </ul>
+
+        <h2>11. Information Security</h2>
+        <ul>
+            <li>Use of HTTPS/TLS encrypted connections</li>
+            <li>Access control systems</li>
+            <li>Monitoring of failures and incidents</li>
+            <li>Security updates</li>
+            <li>Secure development practices</li>
+        </ul>
+
+        <p> Although appropriate security measures are applied, no system can guarantee absolute security against all risks. </p>
+
+        <h2>12. Security Incidents</h2>
+        <p> In the event of a security incident that may cause significant risk or harm to users, DatePlan will take appropriate mitigation measures and make required notifications under applicable law. </p>
+
+        <h2>13. User Rights</h2>
+        <ul>
+            <li>Confirmation of data processing</li>
+            <li>Access to personal data</li>
+            <li>Correction of data</li>
+            <li>Deletion of personal data</li>
+            <li>Data portability</li>
+            <li>Information about data sharing</li>
+            <li>Objection to processing where applicable by law</li>
+        </ul>
+
+        <p> Most of these rights can be exercised directly within the app. </p>
+
+        <h2>14. Account Deletion</h2>
+        <p> Users may request account deletion directly through the app's available features. </p>
+        <p> If any issues occur, users may contact the email provided in this Policy. </p>
+
+        <h2>15. Changes to This Policy</h2>
+        <p> This Policy may be updated periodically to reflect legal, regulatory, technical, or operational changes. </p>
+        <p> When significant changes occur, users will be notified through the app, official website, or other appropriate means. </p>
+
+
+    </div>
+
+    <footer>
+        © 2026 DatePlan
+    </footer>
+
+</div>
+
+<script>
+    function showLanguage(lang){
+        document.getElementById('pt').classList.add('hidden');
+        document.getElementById('en').classList.add('hidden');
+
+        document.getElementById(lang).classList.remove('hidden');
+
+        localStorage.setItem('dateplan_lang', lang);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const saved =
+            localStorage.getItem('dateplan_lang');
+
+        if(saved){
+            showLanguage(saved);
+            return;
+        }
+
+        const browserLang =
+            navigator.language.toLowerCase();
+
+        if(browserLang.startsWith('pt')){
+            showLanguage('pt');
+        }else{
+            showLanguage('en');
+        }
+    });
+</script>
 
 </body>
 </html>
+```

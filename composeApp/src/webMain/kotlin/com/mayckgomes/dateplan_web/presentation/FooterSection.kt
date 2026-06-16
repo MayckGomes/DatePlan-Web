@@ -21,6 +21,7 @@ import com.mayckgomes.dateplan_web.components.StyledButton
 @Composable
 fun FooterSection(
     onPolicyPrivacyClick: () -> Unit,
+    onTermsOfUseClick: () -> Unit,
     onGithubClick: () -> Unit,
     onFeedbackClick: () -> Unit,
     onBugReportClick: () -> Unit,
@@ -49,8 +50,13 @@ fun FooterSection(
             verticalArrangement = Arrangement.spacedBy(10.dp),
         ){
             StyledButton(
-                label = "Policy privacy",
+                label = "Policy Privacy",
                 onClick = { onPolicyPrivacyClick() },
+                color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.5f),
+            )
+            StyledButton(
+                label = "Terms of Use",
+                onClick = { onTermsOfUseClick() },
                 color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.5f),
             )
             StyledButton(
