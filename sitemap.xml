@@ -22,6 +22,13 @@
         <changefreq>never</changefreq>
     </url>
 
+    <!-- termos de uso -->
+    <url>
+        <loc>https://dateplanapp.netlify.app/terms-of-use</loc>
+        <priority>0.8</priority>
+        <changefreq>never</changefreq>
+    </url>
+
     <!-- Página sobre o app -->
     <url>
         <loc>https://dateplanapp.netlify.app/about</loc>

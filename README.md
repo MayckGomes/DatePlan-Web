@@ -1,93 +1,169 @@
-# 📅 DatePlan Web
+# DatePlan Web 💻
+
+Landing page oficial do [DatePlan](https://play.google.com/store/apps/details?id=mayckgomes.com.dateplan), app para casais planejarem, viverem e reviverem seus momentos juntos.
 
 ---
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/626b7e46-0005-4ec0-a1f2-e51e7e7d78ea/deploy-status)](https://app.netlify.com/projects/dateplanapp/deploys)
+## Por que este projeto foi criado?
 
-[Click here to be redirected](https://dateplanapp.netlify.app/)
+O DatePlan nasceu como um app Android para casais e, com o crescimento do projeto, surgiu a necessidade de uma presença na web — um endereço público onde qualquer pessoa pudesse descobrir o app, entender o que ele faz e ser direcionada para o Google Play.
 
-Web application for DatePlan, an app focused on helping couples organize events, important dates, and special moments.
+A primeira versão do site foi construída com **Kotlin Multiplatform (KMP) + Compose Multiplatform (CMP) compilado para WASM**. A escolha fazia sentido técnico no contexto do ecossistema KMP, mas trouxe um problema prático inaceitável para uma landing page: **um loading inicial obrigatório** enquanto o runtime WASM era baixado e inicializado pelo navegador, mesmo o conteúdo sendo completamente estático.
 
-This project was developed using Kotlin Multiplatform and Compose Multiplatform, enabling shared logic across platforms and delivering a modern web experience.
+Para uma landing page cujo único objetivo é converter visitantes em usuários do app, esse loading significa:
 
----
+- Primeira impressão ruim — o visitante vê um spinner antes de qualquer conteúdo
+- SEO comprometido — crawlers do Google e leitores de IA (ChatGPT, Perplexity, Gemini) não executam WASM
+- Bundle de MBs para um conteúdo que caberia em KBs
+- Complexidade desnecessária de build e deploy para algo que não precisa compartilhar lógica com o app
 
-## 🚀 Technologies Used
-
-* 🧠 Kotlin Multiplatform (KMP)
-* 🎨 Compose Multiplatform (CMP)
-* 🌐 Web (Kotlin/JS)
-* ⚙️ Gradle (KTS)
+A decisão foi **migrar para HTML + CSS + JS puro**, eliminando o loading completamente, com deploy direto no Netlify sem nenhuma etapa de build.
 
 ---
 
-## 📂 Project Structure
+## Objetivos do projeto
+
+- **Zero loading** — o site renderiza instantaneamente, sem runtime, sem bundle pesado
+- **SEO e AEO** — indexável por Google e legível por modelos de IA via JSON-LD estruturado
+- **Internacionalização PT/EN** — detecção automática pelo idioma do navegador, preferência salva no `localStorage`
+- **Fácil manutenção** — features, vantagens e FAQ editáveis em um único arquivo (`content.js`), sem tocar em HTML ou CSS
+- **Identidade visual fiel ao app** — fonte Alexandria, vermelho `#FF0000`, fundo escuro no hero, tipografia e espaçamento alinhados com o design do DatePlan
+
+---
+
+## Estrutura do projeto
 
 ```
-DatePlan Web/
-├── build.gradle.kts
-├── settings.gradle.kts
-├── gradle/
-├── src/
-└── ...
+dateplan-web/
+│
+├── index.html          # Estrutura da página (não editar para conteúdo)
+├── styles.css          # Todo o CSS (tokens, layout, componentes, responsivo)
+│
+├── content.js          # CONTEÚDO EDITÁVEL — features, vantagens e FAQ
+├── i18n.js             # Traduções PT/EN e lógica de troca de idioma
+├── main.js             # Inicialização: starfield, FAQ accordion, scroll reveal
+│
+├── app-screenshot.png  # Screenshot do app exibida no mockup de celular
+├── favicon.ico         # Ícone do site
+├── apple-touch-icon.png# Ícone para iOS
+├── banner.png          # Imagem 1200×630 para Open Graph / WhatsApp
+│
+├── privacy-policy.html # Política de Privacidade
+└── terms-of-use.html   # Termos de Uso
 ```
 
 ---
 
-## ▶️ How to Run the Project
+## Como editar o conteúdo
 
-### 🔧 Prerequisites
+Todo o conteúdo dinâmico da página fica em **`content.js`**. Não é necessário tocar em HTML ou CSS para adicionar, editar ou remover itens.
 
-* JDK 17+
-* Gradle (or use the wrapper `./gradlew`)
+### Adicionar uma feature
 
----
-
-## 💻 Run Locally
-
+```js
+// Em siteContent.features.pt (e o equivalente em .en):
+{
+  icon: "🗓️",
+  title: "Novo título da feature",
+  desc: "Descrição da feature."
+},
 ```
-./gradlew jsBrowserDevelopmentRun
+
+### Remover uma feature
+
+Apague o objeto inteiro — do `{` até o `},` — no array correspondente. Faça o mesmo no array do outro idioma para manter a paridade.
+
+### Adicionar uma pergunta no FAQ
+
+```js
+// Em siteContent.faq.pt (e o equivalente em .en):
+{
+  q: "Pergunta aqui?",
+  a: "Resposta aqui."
+},
 ```
 
-### Then access:
+### Card de vantagem em destaque (fundo escuro)
 
-[http://localhost:8080](http://localhost:8080)
+Defina `highlight: true` no objeto para que o card use o estilo escuro:
 
----
-
-## ✨ Features
-
-* 📅 Event visualization
-* ❤️ Focused on couples
-* 🎯 Simple and intuitive interface
-* 📱 App integration
-
----
-
-## ⚙️ This Web Project Works As
-
-* Institutional page
-* App presentation
-* User conversion (download funnel)
+```js
+{
+  icon: "🔥",
+  title: "Destaque",
+  desc: "Este card terá fundo escuro.",
+  highlight: true
+}
+```
 
 ---
 
-## 🧠 Goal
+## Internacionalização
 
-To create a lightweight, fast, and engaging experience to:
+O arquivo `i18n.js` contém as traduções dos textos fixos da página (títulos de seção, botões, footer). O conteúdo dinâmico (features, vantagens, FAQ) é traduzido diretamente no `content.js` via arrays separados por idioma (`pt` e `en`).
 
-* Present DatePlan
-* Engage new users
-* Drive app downloads
+**Lógica de detecção:**
 
----
-
-## 👨‍💻 Author
-
-Developed by Mayck Gomes
+1. Verifica se há uma preferência salva no `localStorage`
+2. Se não houver, detecta o idioma do navegador (`navigator.language`)
+3. Navegadores em português → PT-BR; demais → EN
+4. A preferência é salva ao clicar nos botões PT / EN no header
 
 ---
 
-## 📄 License
+## SEO e leitura por IA
 
-This project is for private use.
+O `<head>` do `index.html` contém três blocos de **JSON-LD (Schema.org)**:
+
+| Tipo | Finalidade |
+|---|---|
+| `SoftwareApplication` | Descreve o app para o Google (categoria, SO, features, preço) |
+| `FAQPage` | Faz as perguntas do FAQ aparecerem como rich snippets no Google e serem citadas por IAs |
+| `Organization` | Vincula o site à Play Store como fonte oficial |
+
+O HTML base está em **PT-BR** (idioma primário do público-alvo), garantindo que crawlers e modelos de IA que não executam JS leiam o conteúdo correto. A troca para EN acontece via JS após o carregamento.
+
+---
+
+## Deploy (Netlify)
+
+O site não tem etapa de build — é HTML estático puro.
+
+**Deploy manual (arrastar e soltar):**
+1. Acesse [app.netlify.com](https://app.netlify.com)
+2. Arraste a pasta `dateplan-landing/` para a área de deploy
+3. Pronto
+
+**Via Git (recomendado):**
+1. Suba a pasta para um repositório GitHub
+2. Conecte o repositório no Netlify
+3. Build command: *(deixar vazio)*
+4. Publish directory: `.` (raiz do repositório)
+
+**Arquivos que ainda precisam ser criados e adicionados à pasta:**
+
+| Arquivo | Dimensões | Uso |
+|---|---|---|
+| `favicon.ico` | 32×32 | Ícone na aba do navegador |
+| `apple-touch-icon.png` | 180×180 | Ícone em iPhones (salvar na tela inicial) |
+| `banner.png` | 1200×630 | Preview no WhatsApp, Twitter e LinkedIn |
+
+---
+
+## Tecnologias
+
+| | |
+|---|---|
+| HTML5 | Estrutura semântica |
+| CSS3 | Layout (Grid, Flexbox), animações, variáveis CSS |
+| JavaScript (ES6+) | i18n, renderização dinâmica, interações |
+| Google Fonts | Fonte Alexandria |
+| Netlify | Hospedagem |
+| Schema.org JSON-LD | SEO estruturado e leitura por IA |
+
+---
+
+## Relacionado
+
+- **App Android:** [Google Play](https://play.google.com/store/apps/details?id=mayckgomes.com.dateplan)
+- **Backend API:** `dateplan-api-v2` (Spring Boot + PostgreSQL, hospedado em OCI ARM)

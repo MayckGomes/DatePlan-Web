@@ -1,8 +1,3 @@
-[[headers]]
-for = "/*.wasm"
-[headers.values]
-Content-Type = "application/wasm"
-
 [[redirects]]
 from = "/"
 to = "/index.html"
@@ -26,14 +21,4 @@ status = 200
 [[redirects]]
 from = "/about"
 to = "https://github.com/MayckGomes/DatePlan-Web"
-status = 200
-
-[[redirects]]
-from = "/feedback-form"
-to = "https://docs.google.com/forms/d/e/1FAIpQLSdjVysJHj4dxnlDu2MmwSBHbpiOaCnqUIU08Waf0VZZNtTqqQ/viewform"
-status = 200
-
-[[redirects]]
-from = "/bug-report-form"
-to = "https://docs.google.com/forms/d/e/1FAIpQLSd6_1JCzAJ_oPx_wpGyS2dJNm9MYS1hYKQCUekPcdVXe07qXg/viewform"
 status = 200
