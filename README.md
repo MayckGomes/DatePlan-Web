@@ -21,8 +21,9 @@ A decisão foi **migrar para HTML + CSS + JS puro**, eliminando o loading comple
 
 ---
 
-## ⚠️ Atenção, este site foi gerado por inteligência artificial ⚠️
+## ⚠️ Este projeto foi desenvolvido com auxílio de Inteligência Artificial.
 
+Entenda a abordagem e o processo de desenvolvimento: [link para o postPost](https://linkedin.com/in/mayckgomes)
 ---
 
 ## Objetivos do projeto
