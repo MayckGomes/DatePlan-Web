@@ -21,6 +21,10 @@ A decisão foi **migrar para HTML + CSS + JS puro**, eliminando o loading comple
 
 ---
 
+## ⚠️ Atenção, este site foi gerado por inteligência artificial ⚠️
+
+---
+
 ## Objetivos do projeto
 
 - **Zero loading** — o site renderiza instantaneamente, sem runtime, sem bundle pesado
